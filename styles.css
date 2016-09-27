@@ -7,3 +7,61 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-color: #3399ff;
+	margin-bottom: 1cm;
+}
+li {
+    float: left;
+	border-right: 10px solid #e6f2ff;
+}
+a {
+	color: white;
+	text-align: center;
+	outline: 0;
+	font-size: 25px;
+	padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #66b3ff;
+}
+.active {
+    background-color: #0059b3;
+}
+
+li:last-child{
+	border-right: none;
+}
+figure {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 600px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+#crossfade {
+    position:relative;
+    height:250px;
+    width:400px;
+}
+#crossfade img {
+    position:absolute;
+    left:0;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
+}
+ 
+#crossfade img.top:hover {
+    opacity:0;
+}
