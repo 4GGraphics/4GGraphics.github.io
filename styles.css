@@ -1,0 +1,9 @@
+img {
+	display: block;
+    margin: auto;
+}
+body { 
+    background-image: url('bg.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
