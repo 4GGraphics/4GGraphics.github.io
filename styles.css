@@ -1,3 +1,4 @@
+/*Standard Changes + Navbar*/
 img {
 	display: block;
     margin: auto;
@@ -27,41 +28,55 @@ a {
 	padding: 14px 16px;
     text-decoration: none;
 }
-
-a:hover {
-    background-color: #66b3ff;
-}
 .active {
     background-color: #0059b3;
 }
-
+a:hover {
+    background-color: #66b3ff;
+}
 li:last-child{
 	border-right: none;
 }
+
+
+
+/*Figure + FigureCaption */
+figcaption {
+	font-family: 'Baloo Bhaina', cursive;
+	font-size: 15px;
+	text-align: center;
+}
+figcaption.normal {
+    line-height: 90%;
+}
 figure {
-    display: block;
+    display: inline-block;
     margin-top: 0px;
     margin-bottom: 600px;
     margin-left: 50px;
     margin-right: 40px;
 }
 
+
+
+/* Crossfade begin */
 #crossfade {
     position:relative;
     height:250px;
     width:400px;
 }
 #crossfade img {
-    position:absolute;
-    left:0;
-    opacity: 1;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;    
-    transition: opacity 1s ease-in-out;
+	position: absolute;
+	left: 198px;
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	top: 23px;
 }
- 
 #crossfade img.top:hover {
     opacity:0;
 }
+/*Crossfade ends*/
