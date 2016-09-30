@@ -55,9 +55,19 @@ figure {
     margin-bottom: 600px;
     margin-left: 50px;
     margin-right: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
+/*iFrame */
+iframe {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 200px;
+	overflow: hidden;
+}
+div {
+  text-align:center;
+  width:100%;
+}
 
 /* Crossfade begin */
 #crossfade {
