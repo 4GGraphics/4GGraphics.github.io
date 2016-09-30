@@ -38,6 +38,16 @@ li:last-child{
 	border-right: none;
 }
 
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	margin-left: 400px;
+	margin-right: 400px;
+	line-height: 20px;
+}
 
 
 /*Figure + FigureCaption */
@@ -62,7 +72,8 @@ figure {
 iframe {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 200px;
-	overflow: hidden;
+	
+	
 }
 div {
   text-align:center;
