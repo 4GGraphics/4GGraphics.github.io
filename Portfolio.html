@@ -2,10 +2,54 @@
 <html>
 
 <head>
-<title> 4GGraphics </title>
-<link rel="icon" href="icon.ico">
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title> 4GGraphics </title>
+    <link rel="icon" href="https://4ggraphics.github.io/icon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        /* Automatically replace images on hover with their data-alt-src. */
+        var imageSwapFunc = function () {
+            var $this = $(this);
+            var newSource = $this.data('alt-src');
+            $this.data('alt-src', $this.attr('src'));
+            $this.attr('src', newSource);
+        }
+        $(document).ready(function() {
+            $('img[data-alt-src]').each(function() {
+                new Image().src = $(this).data('alt-src');
+            }).hover(imageSwapFunc, imageSwapFunc);
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #b8e8ff;
+            filter: progid: DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#b8e8ff, endColorstr=#9eafb8);
+            background-image: -moz-linear-gradient(left top, #b8e8ff 0%, #9eafb8 100%);
+            background-image: -webkit-linear-gradient(left top, #b8e8ff 0%, #9eafb8 100%);
+            background-image: -ms-linear-gradient(left top, #b8e8ff 0%, #9eafb8 100%);
+            background-image: linear-gradient(left top, #b8e8ff 0%, #9eafb8 100%);
+            background-image: -o-linear-gradient(left top, #b8e8ff 0%, #9eafb8 100%);
+            background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #b8e8ff), color-stop(100%, #9eafb8));
+        }
+
+        .row {
+            margin-bottom: 2%;
+        }
+
+        .footer {
+            border-top: 1px solid;
+            margin-top: 2%;
+            padding-bottom: 4%;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -13,14 +57,28 @@
 <img src="Logo.png" align="middle" style="width:1086px;height:182.25px;">
 </header>
 
-<nav>
-<ul style="font-family: 'Baloo Bhaina', cursive;">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Portfolio.html">Portfolio</a></li>
-  <li><a href="Order.html">Order</a></li>
-  <li><a href="Policy.html">Policy</a></li>
-  <li><a href="Contact.html">Contact</a></li>
-</ul>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">4GGraphics</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse"style="font-size: 20px; font-family: 'Baloo Bhaina', cursive;">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Portfolio</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="Policy.html">Policy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
 </nav>
 
 </body>
