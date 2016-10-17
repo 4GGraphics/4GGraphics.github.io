@@ -42,3 +42,17 @@
 
 </body>
 </html>
+<script type="text/javascript">
+    /* Automatically replace images on hover with their data-alt-src. */
+    var imageSwapFunc = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+    $(document).ready(function() {
+        $('img[data-alt-src]').each(function() {
+            new Image().src = $(this).data('alt-src');
+        }).hover(imageSwapFunc, imageSwapFunc);
+    });
+</script>
